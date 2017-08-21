@@ -1,0 +1,32 @@
+          <div class="panel panel-default">
+            <div class="panel-heading">{{group_name}}</div>
+            <div class="panel-body">
+            
+               <p>Ближайшее занятие: {{near_lesson}}</p>
+               <p>По адрессу: {{near_lesson_addr}}</p>
+               
+              
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-custom">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="glyphicon glyphicon-plus"></i>
+                            Отметить учеников посетивших занятие {{near_lesson}}
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body animated zoomOut">
+<form action = '' method = 'post'>
+<input type = 'hidden' name = 'lessonid' value = '{{lessid}}'>
+{{student_list}}
+<button type="sumbit" class="btn btn-success">Сохранить</button>
+</form>
+                    </div>
+                    <a href='/tpanel/list/{{id}}'>Расписание</a>
+                </div>
+            </div></div>
+
+            </div>
+          </div>

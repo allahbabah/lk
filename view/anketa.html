@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="view/main.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <button type="sumbit" onclick="history.back();" class="btn btn-success" style = 'float:left'>Назад</button>
+  <a href = '/destroy.php'><button type="sumbit" class="btn btn-success" style = 'float:right'>Выход</button></a>
+   <div class="container">
+<center><h1> Анкета</h1></center>
+
+
+<form action = '' method = 'post'>
+    <div class="form-group">
+    <label for="exampleFormControlInput1">ФИО ребенка</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='name'>
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Дата рождения</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='birtday'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Номер школы/Сада</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='school'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Класс/группа</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='grade'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Какими видами спорта и танца занимался Ваш ребенок</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='sport'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Для чего вы отдали ребенка на танцы</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='reason'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Группа физподготовки</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='group'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Особенности физического состояния ребенка</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='phys'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Реакция Вашего ребенка на физическую нагрузку</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='react'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Перенесенные заболевания, переломы и операции</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='probl'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Перечислите 5 наиболее выраженных черт характера, присущих Вашему ребенку</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='character'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Чем Ваш ребенок занимается с удовольствием</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='whatlove'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Чем Ваш ребенок не любит заниматься</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='whatdontlove'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Какая ситуация может оказаться трудной, стрессовой для Вашего ребенка</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='stress'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Отношение к вещам (узнает ли свои вещи, любит ли их терять)</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='things'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">С кем предпочитает общаться ВАш ребенок (с младшими, с ровесниками, со старшими. Есть ли трудности в общении)</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='friends'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Состав семьи (перечислить)</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='family'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Что еще считаете необходимым рассказать о своем ребенке</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='something'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Что вам нравится или не нравится в нашей студии танца</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='review'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">С каким настроением ребенок возвращается домой после танцев</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='emotion'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Что Вы ожидаете от занятии в студии танца</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='whatwait'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Дата заполнения анкеты</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='data'>
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlInput1">Анкету заполнил(а)</label>
+    <input class="form-control" id="exampleFormControlInput1"  name='parent'>
+  </div>
+  <button type="submit" class="btn btn-primary">Сохранить</button>
+  </form>
+
+
+
+
+
+
+
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2017 ООО "ГРУППА КИТ"</p>
+      </footer>
+    </div> 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
